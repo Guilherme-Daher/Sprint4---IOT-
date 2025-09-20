@@ -9,7 +9,7 @@ if face_cascade.empty():
     exit()
 
 # Lê o vídeo gravado (substitua pelo nome do seu arquivo)
-cap = cv2.VideoCapture('VIdeoSprint3.mp4')
+cap = cv2.VideoCapture('AlunosVideo.mp4')
 
 if not cap.isOpened():
     print("Erro ao abrir o vídeo.")
