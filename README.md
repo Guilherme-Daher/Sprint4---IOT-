@@ -1,4 +1,8 @@
-# 🧠 Detector Facial com OpenCV + Haar Cascade
+# 🧠 Projeto de Reconhecimento Facial com OpenCV
+
+Este projeto implementa um sistema de reconhecimento facial utilizando Python e OpenCV. Ele permite cadastrar rostos via webcam, treinar um modelo LBPH e realizar autenticação facial em tempo real.
+
+---
 
 ## 👥 Integrantes
 
@@ -6,27 +10,34 @@
 - Gabriel Toledo – 551654  
 - Gustavo Akio – 550241  
 - Gabriel Freitas – 550187  
-- Heitor Nobre – 551539  
+- Heitor Nobre – 551539
+  
+---
+
+## 📌 Objetivo
+
+Criar um sistema simples e funcional de reconhecimento facial que possa identificar usuários previamente cadastrados com base em imagens capturadas pela webcam. Realizando uma integração entre as Sprints de Physical Computing (IoT & IoB) e Mobile Development.
 
 ---
 
-## 🎯 Objetivo
+## ⚙️ Instalação
 
-Desenvolver uma aplicação local (desktop/notebook) que realiza **detecção facial** em tempo real utilizando a biblioteca **OpenCV** e o algoritmo **Haar Cascade**. A aplicação permite ajustar parâmetros relevantes e visualizar o impacto dessas mudanças diretamente na tela.
+1. Clone o repositório ou copie os arquivos do projeto.
+2. Instale as dependências: ```bash
+'pip install opencv-python numpy pillow'
 
----
 
-## 🛠️ Tecnologias Utilizadas
+## Execução:
 
-- **Python 3.7+**
-- **OpenCV (opencv-python)**
-- **Haar Cascade Classifier** (`haarcascade_frontalface_default.xml`)
+- Para capturar rostos: 'python 0_dataset_creator.py'
+- Treinar modelo: 'python 1_trainer.py'
+- Para rodar a API: 'python api.py'
 
----
+- **obs: No arquivo 'face_recognizer.py' edite e Adicione novos IDS:
+ ID_NOMES = {
+    1: "Guilherme Daher",
+    2: Memphis Depay (Exemplo)
+}
 
-## 📦 Instalação
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/Guilherme-Daher/Sprint3--IOT.git
-   cd face-detector
+## Atenção!!!
+- Quando executar a API, preste atenção na URL que ela retorna, a mesma deve ser substituída no projeto de Android para que haja integração e compatibilidade.
