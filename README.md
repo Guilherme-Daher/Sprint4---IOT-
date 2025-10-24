@@ -24,13 +24,13 @@ Criar um sistema simples e funcional de reconhecimento facial que possa identifi
 
 1. Clone o repositório ou copie os arquivos do projeto.
 2. Instale as dependências: ```bash
-'pip install opencv-python numpy pillow'
+'pip install opencv-python numpy pillow' e 'pip install -r requirements.txt'
 
 
 ## Execução:
 
 - Para capturar rostos: 'python 0_dataset_creator.py'
-- Treinar modelo: 'python 1_trainer.py'
+- Treinar modelo: 'python 1_trainer.py' - Execute pelo menos de 3 a 5 vezes, para garantir de entendimento do sistema com a face do User
 - Para rodar a API: 'python api.py'
 
 - **obs: No arquivo 'face_recognizer.py' edite e Adicione novos IDS:
